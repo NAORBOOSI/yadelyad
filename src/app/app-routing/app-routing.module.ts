@@ -28,6 +28,8 @@ const routes: Routes = [
   { path: 'addGetting', component: CreateGittingComponent },
   { path: 'addDelivery', component: CreateDeliveryComponent },
   { path: 'findByFirstName', component: SearchComponent },
+  { path: 'addCompany', component: CreateGittingComponent },
+
 ];
 
 @NgModule({

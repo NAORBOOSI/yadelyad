@@ -21,8 +21,8 @@ export class UserServiceService {
   getAllDelivery(): Observable<Delivery[]>{
     return this.http.get<Delivery[]>(this.baseUrl +'/listDelivery');
   }
-getAllGetting(): Observable<Getting[]>{
-    return this.http.get<Getting[]>(this.baseUrl+'/listAllGetting');
+  getAllGetting(): Observable<Getting[]>{
+    return this.http.get<Getting[]>(this.baseUrl+'/listGetting');
   }
  getAllCompany(): Observable<Company[]>{
     return this.http.get<Company[]>(this.baseUrl+'/listAllCompany');
@@ -99,10 +99,13 @@ createCompany(company: Company):void{
      return this.http.delete('${this.baseUrl}/${id}');
    }
   
-  getParentsList(): Observable<any>{
+   getDeliveryList(): Observable<any>{
     return this.http.get(this.baseUrl);
   }
-  getChildrenList(): Observable<any>{
+  getGettingList(): Observable<any>{
+    return this.http.get(this.baseUrl);
+  }
+  getCompanyList(): Observable<any>{
     return this.http.get(this.baseUrl);
   }
  

@@ -15,7 +15,21 @@ import { CompanyComponent } from './component/company/company.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { SearchComponent } from './component/search/search.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import {MatMenuModule} from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,16 +39,35 @@ import { SearchComponent } from './component/search/search.component';
     ListGettingComponent,
     ListDeliveryComponent,
     ListCompanyComponent,
-    HttpClient,
+  
     DeliveryComponent,
     GettingComponent,
     CompanyComponent,
     HomepageComponent,
     ProfileComponent,
-    SearchComponent
+    SearchComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+     MatCheckboxModule,
+     MatIconModule,
+    AppRoutingModule,
+     FormsModule,
+    HttpClientModule,
+     MatButtonModule,
+     MatInputModule,
+     MatTableModule,
+     MatSortModule,
+     MatPaginatorModule,
+    MatMenuModule,
+     MatDatepickerModule,
+     MatNativeDateModule,
+     MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
