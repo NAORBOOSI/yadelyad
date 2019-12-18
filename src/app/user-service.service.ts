@@ -4,7 +4,7 @@ import { Delivery } from './model/delivery';
 import { Getting } from './model/getting';
 import { HttpClient } from '@angular/common/http';
 import { Company } from './model/company';
-import { DataStorageService } from './data-storage.service';
+import { DatastorageService } from './datastorage.service';
 
 
 
@@ -16,7 +16,7 @@ export class UserServiceService {
 
   private baseUrl = 'http://localhost:8080/api';
 
-  constructor(private http: HttpClient,private dataStorage:DataStorageService) { }
+  constructor(private http: HttpClient,private dataStorage:DatastorageService) { }
  
   getAllDelivery(): Observable<Delivery[]>{
     return this.http.get<Delivery[]>(this.baseUrl +'/listDelivery');
@@ -85,18 +85,16 @@ createCompany(company: Company):void{
     
   }
   
-  createCustomer(customer : any): Observable<any>{
-    return this.http.post('${this.baseUrl}/getting',customer);
+  createGetting1(getting : any): Observable<any>{
+    return this.http.post('${this.baseUrl}/getting',getting);
   }
-  createCustomer2(customer : any): Observable<any>{
-    return this.http.post('${this.baseUrl}/${Delivery}',customer);
+  createDelivery2(delivery : any): Observable<any>{
+    return this.http.post('${this.baseUrl}/${Delivery}',delivery);
   }
-  createCustomer3(customer : any): Observable<any>{
-    return this.http.post('${this.baseUrl}/${Company}',customer);
+  createCompany3(company : any): Observable<any>{
+    return this.http.post('${this.baseUrl}/${Company}',company);
   }
-  updateCustomer(parentId :string , value: any):Observable<any>{
-    return this.http.put('${this.baseUrl}/${id}' , value);
-  }
+  
   delete(parentId : string) : Observable<any>{
      return this.http.delete('${this.baseUrl}/${id}');
    }

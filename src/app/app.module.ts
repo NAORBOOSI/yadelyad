@@ -9,6 +9,12 @@ import { ListGettingComponent } from './component/list-getting/list-getting.comp
 import { ListDeliveryComponent } from './component/list-delivery/list-delivery.component';
 import { ListCompanyComponent } from './component/list-company/list-company.component';
 import { HttpClient } from '@angular/common/http';
+import { DeliveryComponent } from './component/delivery/delivery.component';
+import { GettingComponent } from './component/getting/getting.component';
+import { CompanyComponent } from './component/company/company.component';
+import { HomepageComponent } from './component/homepage/homepage.component';
+import { ProfileComponent } from './component/profile/profile.component';
+import { SearchComponent } from './component/search/search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { HttpClient } from '@angular/common/http';
     ListGettingComponent,
     ListDeliveryComponent,
     ListCompanyComponent,
-    HttpClient
+    HttpClient,
+    DeliveryComponent,
+    GettingComponent,
+    CompanyComponent,
+    HomepageComponent,
+    ProfileComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule
