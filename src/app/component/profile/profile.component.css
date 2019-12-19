@@ -1,5 +1,6 @@
 .example-card {
     max-width: 500px;
+    margin: 100px auto;
   }
   
   .example-header-image {
@@ -14,6 +15,7 @@
   p.test1{
     font-family: "Times New Roman", Times, serif;
     font-size: 130%; 
+
   }
   mat-card-title{
     text-align: center;

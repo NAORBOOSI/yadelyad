@@ -21,5 +21,13 @@
      height: 100%;
  }
  
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } 
+html, body { height: 100%; 
+    background-color: chartreuse;
+   
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+ } 
+ body{
+    background-image: url("C:/Users/NAOR/yadelyadApp/image/pic1.jpg");
+
+  }

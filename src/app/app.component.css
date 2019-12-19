@@ -1,7 +1,7 @@
 p {
     font-family: Lato;
   }
-container{
+.container{
     height:20% ;
 }
 .container {
@@ -24,4 +24,6 @@ container{
   }
   mat-sidenav{
     width: 200px;
+    background-color: cornflowerblue;
   }
+  
