@@ -6,11 +6,12 @@ export class Person {
 
     lastName: string;
 
-    birthDate: string;
+    date: string;
 
     phoneNumber: string;
 
-    emailAdrress: string;
+    emailAddress: string;
+
     position: number;
 
     imageFile : string;

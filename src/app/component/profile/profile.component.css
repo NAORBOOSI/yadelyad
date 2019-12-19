@@ -1,5 +1,5 @@
 .example-card {
-    max-width: 400px;
+    max-width: 500px;
   }
   
   .example-header-image {
@@ -8,9 +8,14 @@
   }
   p {
     font-family: "Times New Roman", Times, serif;
-   font-size: 150%; 
+   font-size:200%;
+   direction: rtl; 
   }
   p.test1{
     font-family: "Times New Roman", Times, serif;
     font-size: 130%; 
   }
+  mat-card-title{
+    text-align: center;
+  }
+  
