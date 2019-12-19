@@ -19,3 +19,7 @@
     text-align: center;
   }
   
+  section{
+    align-items: center;
+    justify-content: center;
+  }

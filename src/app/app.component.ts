@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   // title = 'yadelyadApp';
   selectedDate: any;
+  openSidenav=false;
 
   onSelect(event){
     console.log(event);

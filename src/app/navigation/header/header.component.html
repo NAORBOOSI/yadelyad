@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <div>
+      <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+   </div>
+    <div><a routerLink="/">LOGO</a></div>
+    <span fxFlex style="flex: 1 1 auto;"></span>
+
+    <span>
+      <ul fxLayout class="navigation-item">
+        <li><a routerLink="/signup">כניסה</a></li>
+        <li><a routerLink="/login">הרשמה</a></li>
+     </ul>
+   </span>
+  </mat-toolbar>

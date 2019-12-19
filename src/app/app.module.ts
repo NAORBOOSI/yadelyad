@@ -29,7 +29,16 @@ import {MatSortModule} from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatSidenavModule,
+         MatToolbarModule,
+         MatListModule
+                    
+} from '@angular/material';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +55,10 @@ import { MatNativeDateModule } from '@angular/material/core';
     HomepageComponent,
     ProfileComponent,
     SearchComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    
+
     
   ],
   imports: [
@@ -67,7 +80,11 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatMenuModule,
      MatDatepickerModule,
      MatNativeDateModule,
-     MatCardModule
+     MatCardModule,
+     MatSidenavModule,
+     MatToolbarModule,
+     MatListModule
+     
   ],
   providers: [],
   bootstrap: [AppComponent]

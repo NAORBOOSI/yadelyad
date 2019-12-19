@@ -1,0 +1,94 @@
+<p>sidenav-list works!</p>
+<mat-nav-list>
+    <button mat-menu-item >
+    <a mat-list-item routerLink="home-page" (click)="onClose()" color="primary" role="button" routerLinkActive="active">
+      <mat-icon>home</mat-icon>
+      <span class="nav-caption">דף הבית</span>
+      </a>
+    </button>
+  
+      <button mat-menu-item >
+      <a mat-list-item routerLink="profile" (click)="onClose()" color="primary" role="button" routerLinkActive="active">
+        <mat-icon>person_add</mat-icon>
+        <span class="nav-caption">אודותינו</span>
+        </a>
+      </button>
+  
+        <button mat-menu-item [matMenuTriggerFor]="secondLevel">
+        <a mat-list-item routerLink="delivery"  color="primary" role="button" routerLinkActive="active">
+          <mat-icon>person_add</mat-icon>
+          <span class="nav-caption">שליחים</span>
+          </a>
+        </button>
+  
+        <button mat-menu-item [matMenuTriggerFor]="secondLevel2">
+          <a mat-list-item routerLink="getting"  color="primary" role="button" routerLinkActive="active">
+            <mat-icon>child_care</mat-icon>
+            <span class="nav-caption">לקוחות</span>
+            </a>
+          </button>
+  
+          <button mat-menu-item [matMenuTriggerFor]="secondLevel3">
+            <a mat-list-item routerLink="company"  color="primary" role="button" routerLinkActive="active">
+              <mat-icon>home</mat-icon>
+              <span class="nav-caption">עמותות</span>
+              </a>
+            </button>
+  
+            <button mat-menu-item>
+              <a mat-list-item routerLink="findByFirstName" (click)="onClose()" color="primary" role="button" routerLinkActive="active">
+                <mat-icon>search</mat-icon>
+                <span class="nav-caption">חיפוש</span>
+                </a>
+              </button>
+  </mat-nav-list>
+
+  
+  <mat-menu #secondLevel="matMenu">
+
+    <button mat-menu-item>
+      <mat-icon>account_box</mat-icon>
+      <a routerLink="list-delivery"  color="primary" (click)="onClose()" role="button"
+        routerLinkActive="active">רשימת מחלקים</a>
+    </button>
+
+
+    <button mat-menu-item>
+      <mat-icon>person_add</mat-icon>
+      <a routerLink="addDelivery"  color="primary" (click)="onClose()" role="button" routerLinkActive="active">
+        הוספת שליח</a>
+    </button>
+
+
+    <mat-menu #secondLevel2="matMenu">
+
+      <button mat-menu-item>
+        <mat-icon>child_care</mat-icon>
+        <a routerLink="list-getting"  color="primary" (click)="onClose()" role="button" routerLinkActive="active">
+         רשימת מקבלים</a>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>person_add</mat-icon>
+        <a routerLink="addGetting"  color="primary" (click)="onClose()" role="button" routerLinkActive="active">
+          הוספת לקוח
+        </a>
+      </button>
+  
+      <mat-menu #secondLevel3="matMenu">
+        <button mat-menu-item>
+          <mat-icon>house</mat-icon>
+          <a routerLink="addCompany"  color="primary" (click)="onClose()" role="button"
+            routerLinkActive="active">הוספת עמותה</a>
+        </button>
+  
+        <button mat-menu-item>
+          <mat-icon>account_box</mat-icon>
+          <a routerLink="list-company"  color="primary" (click)="onClose()" role="button"
+            routerLinkActive="active">רשימת עמותות</a>
+        </button>
+  
+      </mat-menu>
+    </mat-menu>
+  
+  </mat-menu>

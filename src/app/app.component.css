@@ -18,4 +18,10 @@ container{
     width: 340px !important;
     height: 308px;
   }
-  
+
+  mat-sidenav-container, mat-sidenav-content, may-sidenav{
+  height:100% ;
+  }
+  mat-sidenav{
+    width: 200px;
+  }
