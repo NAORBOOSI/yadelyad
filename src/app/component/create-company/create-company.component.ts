@@ -11,7 +11,7 @@ import { User } from 'src/app/user';
 })
 export class CreateCompanyComponent implements OnInit {
 
-  Company : Company =new Company();
+  company : Company =new Company();
   submitted= false;
    user: User=new User();
 
@@ -27,7 +27,7 @@ export class CreateCompanyComponent implements OnInit {
     )
 }
 createCompany(){
-  this.userService.createCompany(this.Company)
+  this.userService.createCompany(this.company)
 }
 
 newUser(): void{

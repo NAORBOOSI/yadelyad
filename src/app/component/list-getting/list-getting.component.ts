@@ -13,7 +13,7 @@ import{ DataSource } from '@angular/cdk/collections'
 export class ListGettingComponent implements OnInit {
 
   dataSource = new userDataSource(this.userService);
-  displayedColumns: string[] = ['position', 'name', 'lastName', 'Id','phoneNumber','emailAdrress','actions'];
+  displayedColumns: string[] = ['position', 'name', 'lastName', 'Id','phoneNumber','emailAddress','actions'];
   // @ViewChild (MatSort) sort : MatSort;
   
 

@@ -11,6 +11,7 @@ import { CreateDeliveryComponent } from '../component/create-delivery/create-del
 import { HomepageComponent } from '../component/homepage/homepage.component';
 import { CreateGittingComponent } from '../component/create-gitting/create-gitting.component';
 import { SearchComponent } from '../component/search/search.component';
+import { CreateCompanyComponent } from '../component/create-company/create-company.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'user', pathMatch: 'full' },
@@ -28,7 +29,7 @@ const routes: Routes = [
   { path: 'addGetting', component: CreateGittingComponent },
   { path: 'addDelivery', component: CreateDeliveryComponent },
   { path: 'findByFirstName', component: SearchComponent },
-  { path: 'addCompany', component: CreateGittingComponent },
+  { path: 'addCompany', component: CreateCompanyComponent },
 
 ];
 

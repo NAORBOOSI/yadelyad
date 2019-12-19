@@ -38,7 +38,7 @@ export class UserServiceService {
   }
   
   createGetting(getting : Getting): void{
-    this.http.post(this.baseUrl+'/getting',getting).subscribe(
+    this.http.post(this.baseUrl+'/Getting',getting).subscribe(
       data=>{
         console.log(data);
         
@@ -50,7 +50,7 @@ export class UserServiceService {
  
 
   createDelivery(delivery : Delivery): void{
-    this.http.post(this.baseUrl+'/Delivery',delivery).subscribe(
+    this.http.post(this.baseUrl+'/addDelivery',delivery).subscribe(
       data=>{
         console.log(data);
         
@@ -63,7 +63,7 @@ export class UserServiceService {
     return this.http.get(this.baseUrl,delivery);
   }
 createCompany(company: Company):void{
-  this.http.post(this.baseUrl+'/appendCompany',company).subscribe(
+  this.http.post(this.baseUrl+'/addCompany',company).subscribe(
     data=>{
       console.log(data);
       this.dataStorage.setCreateCompanyResponse(JSON.stringify(data));

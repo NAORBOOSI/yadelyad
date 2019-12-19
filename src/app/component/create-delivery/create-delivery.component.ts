@@ -28,7 +28,7 @@ export class CreateDeliveryComponent implements OnInit {
   
   
     createDelivery(): void{
-      this.userService.createDelivery2(this.delivery)
+      this.userService.createDelivery(this.delivery)
   
     }
     newUser(): void{
